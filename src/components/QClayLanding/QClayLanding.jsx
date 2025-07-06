@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './QClayLanding.css';
+import styles from './QClayLanding.module.css';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -18,20 +18,20 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
-      <div className="logo"></div>
-      <nav className="nav">
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
+      <div className={styles.logo}></div>
+      <nav className={styles.nav}>
         <a href="#">Home</a>
         <a href="#">DeFi App</a>
         <a href="#">Assets</a>
         <a href="#">Features</a>
         <a href="#">Pricing</a>
         <a href="#">FAQ</a>
-        <div className="protection">Protection</div>
+        <div className={styles.protection}>Protection</div>
       </nav>
-      <div className="account-section">
-        <span className="icon user-icon"></span>
-        <a href="#" className="create-account">Create Account</a>
+      <div className={styles.accountSection}>
+        <span className={styles.userIcon}></span>
+        <a href="#" className={styles.createAccount}>Create Account</a>
       </div>
     </header>
   );
@@ -39,34 +39,34 @@ const Header = () => {
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="map-text">Cortex <span>20.945</span></div>
-      <div className="map-text">Quant <span>2.945</span></div>
-      <div className="map-text">Aelf <span>19.346</span></div>
-      <div className="map-text">Meeton <span>440</span></div>
+    <section className={styles.hero}>
+      <div className={styles.mapText}>Cortex <span>20.945</span></div>
+      <div className={styles.mapText}>Quant <span>2.945</span></div>
+      <div className={styles.mapText}>Aelf <span>19.346</span></div>
+      <div className={styles.mapText}>Meeton <span>440</span></div>
       
-      <button className="unlock-button">Unlock Your Assets Spark! →</button>
+      <button className={styles.unlockButton}>Unlock Your Assets Spark! →</button>
       
-      <h1 className="hero-heading">
-        One-click for <span className="highlight">Asset Defense</span>
+      <h1 className={styles.heroHeading}>
+        One-click for <span className={styles.highlight}>Asset Defense</span>
       </h1>
       
-      <p className="hero-subtext">
+      <p className={styles.heroSubtext}>
         Dive into the art assets, where innovative blockchain technology meets financial expertise
       </p>
       
-      <div className="hero-buttons">
-        <button className="open-app">Open App</button>
-        <button className="discover">Discover More</button>
+      <div className={styles.heroButtons}>
+        <button className={styles.openApp}>Open App</button>
+        <button className={styles.discover}>Discover More</button>
       </div>
       
-      <div className="scroll-indicator">02/03 . Scroll down</div>
+      <div className={styles.scrollIndicator}>02/03 . Scroll down</div>
     </section>
   );
 };
 
 const FooterLogos = () => (
-  <div className="footer-logos">
+  <div className={styles.footerLogos}>
     <span>▲Vercel</span>
     <span>loom</span>
     <span>$Cash App</span>
@@ -79,7 +79,7 @@ const FooterLogos = () => (
 
 const QClayLanding = () => {
   return (
-    <div className="app">
+    <div className={styles.app}>
       <Header />
       <Hero />
       <FooterLogos />

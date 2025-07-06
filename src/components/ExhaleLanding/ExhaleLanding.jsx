@@ -1,87 +1,80 @@
 import React from 'react';
-import yogaImg from '../../assets/images/yoga.jpg';
+import profile1 from "../../assets/images/profile images/image1.jpg";
+import profile2 from "../../assets/images/profile images/image2.jpg";
+import profile3 from "../../assets/images/profile images/image3.jpg";
+import profile4 from "../../assets/images/profile images/image4.jpg";
+import profile5 from "../../assets/images/profile images/image5.jpg";
+import profile6 from "../../assets/images/profile images/image6.jpg";
+import profile7 from "../../assets/images/profile images/image7.jpg";
+import yoga2 from "../../assets/images/yoga2.jpg";
 import './ExhaleLanding.css';
 
 const ExhaleLanding = () => {
   return (
-    <div className="exhole-container">
-      {/* Navigation */}
-      <nav className="exhole-nav">
-        <div className="nav-left">
-          <h1>Exhole</h1>
-        </div>
-        <div className="nav-right">
+    <div className="exhale-landing-container">
+      <header className="exhale-navbar">
+        <h2 className="exhale-logo">Exhale</h2>
+        <nav>
           <a href="#">Home</a>
           <a href="#">Classes</a>
           <a href="#">Pricing</a>
           <a href="#">Contact</a>
-          <a href="#">Sign in</a>
-        </div>
-      </nav>
+        </nav>
+        <button className="exhale-sign-in">Sign In</button>
+      </header>
 
-      <hr className="divider" />
-
-      {/* Hero Section */}
-      <div className="hero-section">
-        <div className="hero-content">
-          <h2>Discover Yourself</h2>
-          <h3>Discover Yoga</h3>
+      <section className="exhale-hero-section">
+        <div className="exhale-hero-text">
+          <h1>Discover Yourself<br />Discover Yoga</h1>
           <p>We share the transformative power of yoga with every mind, every body, everywhere</p>
-          <button className="cta-button">Join Now</button>
-        </div>
-        <div className="hero-image">
-          <img src={yogaImg} alt="Yoga practice" />
-        </div>
-      </div>
+          <button className="exhale-join-btn">Join Now</button>
 
-      {/* Stats Section */}
-      <div className="stats-section">
-        <div className="stat-item">
-          <p className="stat-value">9.5%+</p>
-          <p className="stat-description">Move from 0.6x members and connected with us!</p>
-          <button className="register-button">Register Now</button>
+          <div className="exhale-members-info">
+            <div className="exhale-profile-group">
+              {[profile1, profile2, profile3, profile4, profile5].map((img, i) => (
+                <img key={i} src={img} alt={`user-${i}`} className="exhale-profile-pic" />
+              ))}
+            </div>
+            <p className="exhale-member-count">9.5k+<br /><span>More than 9.5k members are connected with us</span></p>
+            <a href="#" className="exhale-register-link">Register Now</a>
+          </div>
         </div>
-      </div>
 
-      {/* Info Section */}
-      <div className="info-section">
-        <p>This new point for online yoga program. I can hear my video approach to take charge by utilizing all of the program content!</p>
-      </div>
+        <div className="exhale-hero-image">
+          <img src={yoga2} alt="yoga" className="exhale-yoga-img" />
+          <div className="exhale-mind-progression">80%<br /><span>Mind Progression</span></div>
+        </div>
 
-      {/* Features Section */}
-      <div className="features-section">
-        <div className="feature-item">
-          <p className="feature-value">Beside Cooper</p>
-          <p className="feature-label">Collision</p>
+        <div className="exhale-stats">
+          <div><strong>30+</strong><br />Live Session</div>
+          <div><strong>12k+</strong><br />Lives Impact</div>
+          <div><strong>60%</strong><br />Engagement Rate</div>
+          <div><strong>95%</strong><br />User Satisfaction</div>
         </div>
-        <div className="feature-item">
-          <p className="feature-value">30+</p>
-          <p className="feature-label">Live Session</p>
-        </div>
-        <div className="feature-item">
-          <p className="feature-value">12k+</p>
-          <p className="feature-label">Live's Impact</p>
-        </div>
-        <div className="feature-item">
-          <p className="feature-value">&gt;60%</p>
-          <p className="feature-label">Topographical Rate</p>
-        </div>
-        <div className="feature-item">
-          <p className="feature-value">95%</p>
-          <p className="feature-label">User Application</p>
-        </div>
-      </div>
+      </section>
 
-      {/* Testimonial Section */}
-      <div className="testimonial-section">
-        <p className="testimonial-text">
-          <em>Autobucket</em> took us to fill in the next stages for yoga. The theme is an meaningful not silly, instructive one on hephat!
-        </p>
-        <div className="testimonial-author">
-          <p className="author-name">Anna Smith</p>
-          <p className="author-location">New York</p>
+      <section className="exhale-testimonials">
+        <div className="exhale-testimonial">
+          <p>“First I’ve paid for online yoga program. I can feel my whole approach to life changing by utilising all of the program content”</p>
+          <div className="exhale-user-info">
+            <img src={profile6} alt="Bessie Cooper" className="exhale-testimonial-pic" />
+            <div>
+              <strong>Bessie Cooper</strong><br />
+              <span>California</span>
+            </div>
+          </div>
         </div>
-      </div>
+        <div className="exhale-testimonial">
+          <p>“Absolutely love it so far! The next stage for yoga. The themes are meaningful not silly. Instructors are so helpful!”</p>
+          <div className="exhale-user-info">
+            <img src={profile7} alt="Anna Smith" className="exhale-testimonial-pic" />
+            <div>
+              <strong>Anna Smith</strong><br />
+              <span>New York</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
