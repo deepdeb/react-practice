@@ -1,12 +1,12 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import QClayLanding from './components/QClayLanding/QClayLanding';
+import YogaLandingPage from './components/YogaLandingPage/YogaLandingPage';
 
 
 function App() {
   return (
     <>
-      <QClayLanding />
+    <YogaLandingPage/>
     </>
   )
 }
