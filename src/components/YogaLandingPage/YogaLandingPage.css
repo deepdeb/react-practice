@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +9,7 @@ body {
     color: #333;
 }
 
-.app-container {
+.rajyog-app-container {
     max-width: 1400px;
     /* Max width to match the image layout */
     margin: 0 auto;
@@ -18,7 +17,7 @@ body {
 }
 
 /* Header Styles */
-.header {
+.rajyog-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +25,7 @@ body {
     margin-bottom: 40px;
 }
 
-.logo {
+.rajyog-logo {
     display: flex;
     align-items: center;
     font-weight: 700;
@@ -34,33 +33,32 @@ body {
     color: #333;
 }
 
-.logo-icon {
+.rajyog-logo-icon {
     width: 40px;
     height: 40px;
     margin-right: 8px;
-    border-radius: 50%;
     object-fit: cover;
     background-color: #e7d8ff
 }
 
-.nav-links {
+.rajyog-nav-links {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.nav-link {
+.rajyog-nav-link {
     text-decoration: none;
     color: #555;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
+.rajyog-nav-link:hover {
     color: #9370DB;
 }
 
-.nav-button {
+.rajyog-nav-button {
     background-color: #9370DB;
     color: white;
     padding: 10px 20px;
@@ -70,12 +68,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.nav-button:hover {
+.rajyog-nav-button:hover {
     background-color: #7B68EE;
 }
 
 /* Hero Section Styles */
-.hero-section {
+.rajyog-hero-section {
     display: flex;
     background-color: #F3EEFF;
     /* Light purple background */
@@ -87,7 +85,7 @@ body {
     margin-bottom: 40px;
 }
 
-.hero-content {
+.rajyog-hero-content {
     flex: 1;
     padding: 60px;
     display: flex;
@@ -96,14 +94,14 @@ body {
     z-index: 1;
 }
 
-.hero-tag {
+.rajyog-hero-tag {
     font-size: 0.9rem;
     font-weight: 600;
     color: #9370DB;
     margin-bottom: 10px;
 }
 
-.hero-title {
+.rajyog-hero-title {
     font-size: 3.2rem;
     font-weight: 700;
     color: #333;
@@ -111,14 +109,14 @@ body {
     margin-bottom: 20px;
 }
 
-.hero-description {
+.rajyog-hero-description {
     font-size: 1rem;
     color: #666;
     line-height: 1.6;
     max-width: 500px;
 }
 
-.hero-image-container {
+.rajyog-hero-image-container {
     flex: 1;
     background-size: cover;
     background-position: center;
@@ -129,14 +127,14 @@ body {
 }
 
 /* Feature Cards Section Styles */
-.feature-cards-section {
+.rajyog-feature-cards-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-bottom: 60px;
 }
 
-.feature-card {
+.rajyog-feature-card {
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
@@ -146,28 +144,28 @@ body {
     position: relative;
 }
 
-.feature-card-image {
+.rajyog-feature-card-image {
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-.feature-card-content {
+.rajyog-feature-card-content {
     padding: 25px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.feature-card-title {
+.rajyog-feature-card-title {
     font-size: 1.6rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 15px;
 }
 
-.feature-buttons {
+.rajyog-feature-buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,7 +173,7 @@ body {
     /* Push buttons to the bottom */
 }
 
-.feature-button {
+.rajyog-feature-button {
     background-color: #F3EEFF;
     color: #9370DB;
     padding: 10px 20px;
@@ -188,11 +186,11 @@ body {
     gap: 5px;
 }
 
-.feature-button:hover {
+.rajyog-feature-button:hover {
     background-color: #E6E6FA;
 }
 
-.feature-arrow {
+.rajyog-feature-arrow {
     width: 24px;
     height: 24px;
     background-color: #E6E6FA;
@@ -205,32 +203,32 @@ body {
 }
 
 /* Specific styles for the "Join Us" card */
-.join-us-card {
+.rajyog-join-us-card {
     background-color: #9370DB;
     color: white;
 }
 
-.join-us-card .feature-card-title {
+.rajyog-join-us-card .rajyog-feature-card-title {
     color: white;
 }
 
-.join-us-card .feature-button {
+.rajyog-join-us-card .rajyog-feature-button {
     background-color: white;
     color: #9370DB;
 }
 
-.join-us-card .feature-button:hover {
+.rajyog-join-us-card .rajyog-feature-button:hover {
     background-color: #eee;
 }
 
-.join-us-card .feature-arrow {
+.rajyog-join-us-card .rajyog-feature-arrow {
     background-color: #7B68EE;
     /* Darker purple for contrast */
     color: white;
 }
 
 /* Testimonial Section Styles */
-.testimonial-section {
+.rajyog-testimonial-section {
     background-color: #F3EEFF;
     border-radius: 20px;
     padding: 60px 40px;
@@ -245,25 +243,25 @@ body {
     text-align: center;
 }
 
-.testimonial-header {
+.rajyog-testimonial-header {
     margin-bottom: 40px;
 }
 
-.testimonial-title {
+.rajyog-testimonial-title {
     font-size: 2.5rem;
     font-weight: 700;
     color: #333;
     margin-bottom: 15px;
 }
 
-.testimonial-description {
+.rajyog-testimonial-description {
     font-size: 1rem;
     color: #666;
     max-width: 600px;
     line-height: 1.6;
 }
 
-.testimonial-card-main {
+.rajyog-testimonial-card-main {
     background-color: white;
     position: relative;
     border-radius: 20px;
@@ -279,7 +277,7 @@ body {
     /* Adjust positioning */
 }
 
-.testimonial-card-main img {
+.rajyog-testimonial-card-main img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -287,26 +285,26 @@ body {
     margin-bottom: 20px;
 }
 
-.testimonial-quote {
+.rajyog-testimonial-quote {
     font-size: 1.1rem;
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.testimonial-author {
+.rajyog-testimonial-author {
     font-weight: 600;
     color: #333;
     margin-bottom: 5px;
 }
 
-.testimonial-role {
+.rajyog-testimonial-role {
     font-size: 0.9rem;
     color: #888;
 }
 
 /* Floating images */
-.floating-image {
+.rajyog-floating-image {
     position: absolute;
     border-radius: 50%;
     object-fit: cover;
@@ -314,49 +312,49 @@ body {
     z-index: 5;
 }
 
-.floating-image-1 {
+.rajyog-floating-image-1 {
     top: 10%;
     left: 10%;
     width: 60px;
     height: 60px;
 }
 
-.floating-image-2 {
+.rajyog-floating-image-2 {
     top: 5%;
     right: 20%;
     width: 50px;
     height: 50px;
 }
 
-.floating-image-3 {
+.rajyog-floating-image-3 {
     bottom: 15%;
     left: 15%;
     width: 70px;
     height: 70px;
 }
 
-.floating-image-4 {
+.rajyog-floating-image-4 {
     bottom: 10%;
     right: 10%;
     width: 55px;
     height: 55px;
 }
 
-.floating-image-5 {
+.rajyog-floating-image-5 {
     top: 30%;
     left: 3%;
     width: 45px;
     height: 45px;
 }
 
-.floating-image-6 {
+.rajyog-floating-image-6 {
     bottom: 5%;
     left: 40%;
     width: 65px;
     height: 65px;
 }
 
-.floating-image-7 {
+.rajyog-floating-image-7 {
     top: 20%;
     right: 5%;
     width: 75px;
@@ -364,7 +362,7 @@ body {
 }
 
 /* Curved text background */
-.curved-text-bg {
+.rajyog-curved-text-bg {
     position: absolute;
     width: 120%; /* Extend beyond container for curve effect */
     height: 100%;
@@ -379,7 +377,7 @@ body {
 }
 
 /* Black overlay using a pseudo-element */
-.curved-text-bg::before {
+.rajyog-curved-text-bg::before {
     content: '';
     position: absolute;
     top: 0;
@@ -390,111 +388,110 @@ body {
     z-index: 2;
 }
 
-
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .hero-section {
+    .rajyog-hero-section {
         flex-direction: column;
         text-align: center;
     }
 
-    .hero-content {
+    .rajyog-hero-content {
         padding: 40px;
         align-items: center;
     }
 
-    .hero-image-container {
+    .rajyog-hero-image-container {
         min-height: 300px;
         width: 100%;
     }
 
-    .hero-title {
+    .rajyog-hero-title {
         font-size: 2.5rem;
     }
 
-    .feature-cards-section {
+    .rajyog-feature-cards-section {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
-    .testimonial-section {
+    .rajyog-testimonial-section {
         padding: 40px 20px;
     }
 
-    .testimonial-title {
+    .rajyog-testimonial-title {
         font-size: 2rem;
     }
 
-    .floating-image {
+    .rajyog-floating-image {
         display: none;
         /* Hide floating images on smaller screens for simplicity */
     }
 
-    .curved-text-bg {
+    .rajyog-curved-text-bg {
         display: none;
         /* Hide curved text on smaller screens */
     }
 }
 
 @media (max-width: 768px) {
-    .header {
+    .rajyog-header {
         flex-direction: column;
         gap: 20px;
     }
 
-    .nav-links {
+    .rajyog-nav-links {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
 
-    .hero-content {
+    .rajyog-hero-content {
         padding: 30px;
     }
 
-    .hero-title {
+    .rajyog-hero-title {
         font-size: 2rem;
     }
 
-    .hero-description {
+    .rajyog-hero-description {
         font-size: 0.9rem;
     }
 
-    .feature-card-title {
+    .rajyog-feature-card-title {
         font-size: 1.4rem;
     }
 }
 
 @media (max-width: 480px) {
-    .app-container {
+    .rajyog-app-container {
         padding: 15px;
     }
 
-    .header {
+    .rajyog-header {
         margin-bottom: 20px;
     }
 
-    .nav-button {
+    .rajyog-nav-button {
         width: 100%;
         text-align: center;
     }
 
-    .hero-content {
+    .rajyog-hero-content {
         padding: 20px;
     }
 
-    .hero-title {
+    .rajyog-hero-title {
         font-size: 1.8rem;
     }
 
-    .hero-image-container {
+    .rajyog-hero-image-container {
         min-height: 200px;
     }
 
-    .feature-cards-section {
+    .rajyog-feature-cards-section {
         grid-template-columns: 1fr;
     }
 
-    .testimonial-title {
+    .rajyog-testimonial-title {
         font-size: 1.8rem;
     }
 }
