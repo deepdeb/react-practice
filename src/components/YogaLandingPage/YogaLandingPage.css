@@ -45,6 +45,7 @@ body {
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 30px;
 }
 
@@ -264,11 +265,14 @@ body {
 
 .testimonial-card-main {
     background-color: white;
+    position: relative;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 30px;
     max-width: 450px;
     text-align: left;
+    left: 240px;
+    top: -50px;
     z-index: 10;
     /* Ensure it's above floating elements */
     margin-top: 50px;
