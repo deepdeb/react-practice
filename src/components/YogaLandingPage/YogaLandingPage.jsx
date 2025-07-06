@@ -4,6 +4,18 @@ import yogaImg2 from '../../assets/images/yoga2.jpg'
 import yogaImg3 from '../../assets/images/yoga3.jpg'
 import yogaImg4 from '../../assets/images/yoga4.jpg'
 
+import profile1 from '../../assets/images/profile images/image1.jpg'
+import profile2 from '../../assets/images/profile images/image2.jpg'
+import profile3 from '../../assets/images/profile images/image3.jpg'
+import profile4 from '../../assets/images/profile images/image4.jpg'
+import profile5 from '../../assets/images/profile images/image5.jpg'
+import profile6 from '../../assets/images/profile images/image6.jpg'
+import profile7 from '../../assets/images/profile images/image7.jpg'
+import profile8 from '../../assets/images/profile images/image8.jpg'
+
+
+
+
 const YogaLandingPage = () => {
   return (
     <div className="app-container">
@@ -88,17 +100,17 @@ const YogaLandingPage = () => {
         </div>
 
         {/* Floating images */}
-        <img src="https://placehold.co/60x60/E6E6FA/333?text=P1" alt="Student 1" className="floating-image floating-image-1" />
-        <img src="https://placehold.co/50x50/E6E6FA/333?text=P2" alt="Student 2" className="floating-image floating-image-2" />
-        <img src="https://placehold.co/70x70/E6E6FA/333?text=P3" alt="Student 3" className="floating-image floating-image-3" />
-        <img src="https://placehold.co/55x55/E6E6FA/333?text=P4" alt="Student 4" className="floating-image floating-image-4" />
-        <img src="https://placehold.co/45x45/E6E6FA/333?text=P5" alt="Student 5" className="floating-image floating-image-5" />
-        <img src="https://placehold.co/65x65/E6E6FA/333?text=P6" alt="Student 6" className="floating-image floating-image-6" />
-        <img src="https://placehold.co/75x75/E6E6FA/333?text=P7" alt="Student 7" className="floating-image floating-image-7" />
+        <img src={profile1} alt="Student 1" className="floating-image floating-image-1" />
+        <img src={profile2} alt="Student 2" className="floating-image floating-image-2" />
+        <img src={profile3} alt="Student 3" className="floating-image floating-image-3" />
+        <img src={profile4} alt="Student 4" className="floating-image floating-image-4" />
+        <img src={profile5} alt="Student 5" className="floating-image floating-image-5" />
+        <img src={profile6} alt="Student 6" className="floating-image floating-image-6" />
+        <img src={profile7} alt="Student 7" className="floating-image floating-image-7" />
 
         {/* Main Testimonial Card */}
         <div className="testimonial-card-main">
-          <img src="https://placehold.co/80x80/E6E6FA/333?text=Emily+R." alt="Emily R." />
+          <img src={profile8} alt="Emily R." />
           <p className="testimonial-quote">
             "Among the yoga community I've been in, Serenity Yoga stands out. Their instructors are knowledgeable, and the classes have helped me improve my focus and improve my flexibility."
           </p>
