@@ -1,5 +1,7 @@
 import React from 'react'
 import './YogaLandingPage.css'
+
+import yogaLogo from '../../assets/logos/yoga-logo.png'
 import yogaImg2 from '../../assets/images/yoga2.jpg'
 import yogaImg3 from '../../assets/images/yoga3.jpg'
 import yogaImg4 from '../../assets/images/yoga4.jpg'
@@ -13,9 +15,6 @@ import profile6 from '../../assets/images/profile images/image6.jpg'
 import profile7 from '../../assets/images/profile images/image7.jpg'
 import profile8 from '../../assets/images/profile images/image8.jpg'
 
-
-
-
 const YogaLandingPage = () => {
   return (
     <div className="app-container">
@@ -23,7 +22,7 @@ const YogaLandingPage = () => {
       {/* Header Section */}
       <header className="header">
         <div className="logo">
-          <div className="logo-icon"></div> {/* Placeholder for the actual icon */}
+            <img className="logo-icon" src={yogaLogo} alt="" />
           SERENITY YOGA
         </div>
         <nav className="nav-links">
