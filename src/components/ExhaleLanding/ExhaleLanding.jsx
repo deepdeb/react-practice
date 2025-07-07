@@ -6,14 +6,14 @@ import profile4 from "../../assets/images/profile images/image4.jpg";
 import profile5 from "../../assets/images/profile images/image5.jpg";
 import profile6 from "../../assets/images/profile images/image6.jpg";
 import profile7 from "../../assets/images/profile images/image7.jpg";
-import yoga2 from "../../assets/images/yoga2.jpg";
+import yoga2 from "../../assets/images/yoga6.jpg";
 import './ExhaleLanding.css';
 
 const ExhaleLanding = () => {
   return (
     <div className="exhale-landing-container">
       <header className="exhale-navbar">
-        <h2 className="exhale-logo">Exhale</h2>
+        <h2 className="exhale-logo">Breath of Balance</h2>
         <nav>
           <a href="#">Home</a>
           <a href="#">Classes</a>
@@ -25,7 +25,7 @@ const ExhaleLanding = () => {
 
       <section className="exhale-hero-section">
         <div className="exhale-hero-text">
-          <h1>Discover Yourself<br />Discover Yoga</h1>
+          <h1>Explore Yourself<br />Explore Yoga</h1>
           <p>We share the transformative power of yoga with every mind, every body, everywhere</p>
           <button className="exhale-join-btn">Join Now</button>
 
@@ -35,7 +35,7 @@ const ExhaleLanding = () => {
                 <img key={i} src={img} alt={`user-${i}`} className="exhale-profile-pic" />
               ))}
             </div>
-            <p className="exhale-member-count">9.5k+<br /><span>More than 9.5k members are connected with us</span></p>
+            <p className="exhale-member-count">3.5k+<br /><span>More than 3.5k members are connected with us</span></p>
             <a href="#" className="exhale-register-link">Register Now</a>
           </div>
         </div>
@@ -46,10 +46,10 @@ const ExhaleLanding = () => {
         </div>
 
         <div className="exhale-stats">
-          <div><strong>30+</strong><br />Live Session</div>
-          <div><strong>12k+</strong><br />Lives Impact</div>
-          <div><strong>60%</strong><br />Engagement Rate</div>
-          <div><strong>95%</strong><br />User Satisfaction</div>
+          <div><strong>50+</strong><br />Live Session</div>
+          <div><strong>3.5k+</strong><br />Lives Impact</div>
+          <div><strong>70%</strong><br />Engagement Rate</div>
+          <div><strong>100%</strong><br />User Satisfaction</div>
         </div>
       </section>
 
@@ -59,7 +59,7 @@ const ExhaleLanding = () => {
           <div className="exhale-user-info">
             <img src={profile6} alt="Bessie Cooper" className="exhale-testimonial-pic" />
             <div>
-              <strong>Bessie Cooper</strong><br />
+              <strong>Bessie Williams</strong><br />
               <span>California</span>
             </div>
           </div>
@@ -69,7 +69,7 @@ const ExhaleLanding = () => {
           <div className="exhale-user-info">
             <img src={profile7} alt="Anna Smith" className="exhale-testimonial-pic" />
             <div>
-              <strong>Anna Smith</strong><br />
+              <strong>Brett Smith</strong><br />
               <span>New York</span>
             </div>
           </div>

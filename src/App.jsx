@@ -6,7 +6,7 @@ import YogaLandingPage from './components/YogaLandingPage/YogaLandingPage';
 function App() {
   return (
     <>
-    <YogaLandingPage/>
+    <ExhaleLanding />
     </>
   )
 }
