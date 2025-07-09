@@ -1,594 +1,592 @@
- 
-.modern-yoga-container {
-  font-family: 'Popping', sans-serif;
-  color: #333;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-
-.modern-yoga-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 5%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
-}
-
-/* .modern-yoga-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.modern-logo-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.modern-logo-text {
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: #5a4fcf;
-}
-
-.modern-yoga-nav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.modern-nav-link {
-  text-decoration: none;
-  color: #555;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.modern-nav-link:hover {
-  color: #5a4fcf;
-}
-
-.modern-nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #5a4fcf;
-  transition: width 0.3s ease;
-}
-
-.modern-nav-link:hover::after {
-  width: 100%;
-}
-
-.modern-nav-button {
-  background-color: #5a4fcf;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(90, 79, 207, 0.3);
-}
-
-.modern-nav-button:hover {
-  background-color: #4a3fb8;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(90, 79, 207, 0.4);
-}
-
-.modern-mobile-menu {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-}
-
-.modern-mobile-menu span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background-color: #5a4fcf;
-  margin: 5px 0;
-  transition: all 0.3s ease;
-}
-
-
-.modern-hero-section {
-  display: flex;
-  min-height: 100vh;
-  padding-top: 6rem;
-}
-
-.modern-hero-content {
-  flex: 1;
-  padding: 5rem 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.modern-hero-tag {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #5a4fcf;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.modern-hero-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-.modern-hero-title span {
-  color: #5a4fcf;
-  position: relative;
-}
-
-.modern-hero-title span::after {
-  content: '';
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  width: 100%;
-  height: 12px;
-  background-color: rgba(90, 79, 207, 0.2);
-  z-index: -1;
-}
-
-.modern-hero-description {
-  font-size: 1.1rem;
-  color: #666;
-  max-width: 500px;
-  margin-bottom: 2.5rem;
-}
-
-.modern-hero-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.modern-primary-btn {
-  background-color: #5a4fcf;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(90, 79, 207, 0.3);
-}
-
-.modern-primary-btn:hover {
-  background-color: #4a3fb8;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(90, 79, 207, 0.4);
-}
-
-.modern-secondary-btn {
-  background-color: transparent;
-  color: #5a4fcf;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  border: 1px solid #5a4fcf;
-}
-
-.modern-secondary-btn:hover {
-  background-color: rgba(90, 79, 207, 0.1);
-}
-
-.modern-hero-image {
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.modern-hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.8) 100%);
-}
-
-
-.modern-features-section {
-  padding: 6rem 5%;
-  background-color: #f9f9ff;
-}
-
-.modern-features-header {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.modern-features-subtitle {
-  display: inline-block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #5a4fcf;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.modern-features-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.modern-feature-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.modern-feature-card {
-  background-color: white;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-}
-
-.modern-feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
-
-.modern-card-image {
-  height: 250px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.modern-card-content {
-  padding: 1.5rem;
-}
-
-.modern-feature-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-  color: #333;
-}
-
-.modern-feature-card p {
-  color: #666;
-  margin-bottom: 1.5rem;
-}
-
-.modern-card-link {
-  display: inline-flex;
-  align-items: center;
-  color: #5a4fcf;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.modern-card-link span {
-  margin-left: 0.5rem;
-  transition: transform 0.3s ease;
-}
-
-.modern-card-link:hover {
-  color: #4a3fb8;
-}
-
-.modern-card-link:hover span {
-  transform: translateX(3px);
-}
-
-.modern-feature-highlight {
-  background-color: #5a4fcf;
-  color: white;
-}
-
-.modern-feature-highlight h3,
-.modern-feature-highlight p {
-  color: white;
-}
-
-.modern-card-button {
-  display: inline-block;
-  background-color: white;
-  color: #5a4fcf;
-  padding: 0.75rem 1.5rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.modern-card-button:hover {
-  background-color: #f0f0ff;
-}
-
-
-.modern-testimonial-section {
-  padding: 6rem 5%;
-  position: relative;
-}
-
-.modern-testimonial-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.modern-testimonial-header {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.modern-testimonial-subtitle {
-  display: inline-block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #5a4fcf;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.modern-testimonial-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.modern-testimonial-description {
-  color: #666;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.modern-testimonial-content {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 4rem;
-}
-
-.modern-testimonial-profiles {
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.modern-testimonial-profile {
-  width: 100%;
-  padding-top: 100%;
-  position: relative;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.modern-testimonial-profile:hover {
-  transform: scale(1.05);
-}
-
-.modern-testimonial-profile img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.modern-testimonial-card {
-  flex: 1;
-  background-color: white;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  position: relative;
-}
-
-.modern-testimonial-card::before {
-  content: '"';
-  position: absolute;
-  top: 1rem;
-  left: 2rem;
-  font-size: 5rem;
-  color: rgba(90, 79, 207, 0.1);
-  font-family: serif;
-  line-height: 1;
-}
-
-.modern-testimonial-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-}
-
-.modern-testimonial-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.modern-testimonial-quote {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #555;
-  margin-bottom: 1.5rem;
-  position: relative;
-}
-
-.modern-testimonial-author {
-  font-weight: 700;
-  color: #333;
-}
-
-.modern-testimonial-author span {
-  display: block;
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: #777;
-  margin-top: 0.25rem;
-}
-
-
-.modern-yoga-footer {
-  background-color: #1a1a2e;
-  color: white;
-  padding: 4rem 5% 2rem;
-}
-
-.modern-footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 3rem;
-}
-
-.modern-footer-brand {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
-}
-
-.modern-footer-brand img {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.modern-footer-brand span {
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-.modern-footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
-.modern-footer-column {
-  flex: 1;
-  min-width: 150px;
-}
-
-.modern-footer-column h4 {
-  font-size: 1.1rem;
-  margin-bottom: 1.25rem;
-  color: #fff;
-}
-
-.modern-footer-column a {
-  display: block;
-  color: #bbb;
-  text-decoration: none;
-  margin-bottom: 0.75rem;
-  transition: color 0.3s ease;
-}
-
-.modern-footer-column a:hover {
-  color: #5a4fcf;
-}
-
-.modern-footer-bottom {
-  text-align: center;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: #bbb;
-  font-size: 0.9rem;
-}
-
-
-@media (max-width: 1024px) {
-  .modern-hero-title {
-    font-size: 2.8rem;
-  }
-  
-  .modern-testimonial-content {
-    flex-direction: column;
-  }
-  
-  .modern-testimonial-profiles {
-    order: 2;
-    margin-top: 3rem;
-  }
-  
-  .modern-testimonial-card {
-    order: 1;
-  }
-}
-
-@media (max-width: 768px) {
-  .modern-yoga-nav {
-    display: none;
-  }
-  
-  .modern-mobile-menu {
-    display: block;
-  }
-  
-  .modern-hero-section {
-    flex-direction: column;
-    padding-top: 5rem;
-  }
-  
-  .modern-hero-content {
-    padding: 3rem 5%;
-  }
-  
-  .modern-hero-image {
-    min-height: 400px;
-  }
-  
-  .modern-feature-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .modern-hero-title {
-    font-size: 2.2rem;
-  }
-  
-  .modern-hero-buttons {
-    flex-direction: column;
-  }
-  
-  .modern-testimonial-profiles {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
+ .modern-yoga-container {
+   font-family: 'Poppins', sans-serif;
+   color: #333;
+   line-height: 1.6;
+   overflow-x: hidden;
+ }
+
+
+ .modern-yoga-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1.5rem 5%;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+   background-color: rgba(255, 255, 255, 0.95);
+   backdrop-filter: blur(10px);
+   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+ }
+
+ .modern-yoga-logo {
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+ }
+
+ .modern-logo-icon {
+   width: 2.5rem;
+   height: 2.5rem;
+   border-radius: 50%;
+   object-fit: cover;
+ }
+
+ .modern-logo-text {
+   font-weight: 700;
+   font-size: 1.25rem;
+   color: #5a4fcf;
+ }
+
+ .modern-yoga-nav {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+ }
+
+ .modern-nav-link {
+   text-decoration: none;
+   color: #555;
+   font-weight: 500;
+   font-size: 0.95rem;
+   transition: all 0.3s ease;
+   position: relative;
+ }
+
+ .modern-nav-link:hover {
+   color: #5a4fcf;
+ }
+
+ .modern-nav-link::after {
+   content: '';
+   position: absolute;
+   bottom: -5px;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background-color: #5a4fcf;
+   transition: width 0.3s ease;
+ }
+
+ .modern-nav-link:hover::after {
+   width: 100%;
+ }
+
+ .modern-nav-button {
+   background-color: #5a4fcf;
+   color: white;
+   padding: 0.75rem 1.5rem;
+   border-radius: 2rem;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 0.95rem;
+   transition: all 0.3s ease;
+   box-shadow: 0 4px 15px rgba(90, 79, 207, 0.3);
+ }
+
+ .modern-nav-button:hover {
+   background-color: #4a3fb8;
+   transform: translateY(-2px);
+   box-shadow: 0 6px 20px rgba(90, 79, 207, 0.4);
+ }
+
+ .modern-mobile-menu {
+   display: none;
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 0.5rem;
+ }
+
+ .modern-mobile-menu span {
+   display: block;
+   width: 24px;
+   height: 2px;
+   background-color: #5a4fcf;
+   margin: 5px 0;
+   transition: all 0.3s ease;
+ }
+
+
+ .modern-hero-section {
+   display: flex;
+   min-height: 100vh;
+   padding-top: 6rem;
+ }
+
+ .modern-hero-content {
+   flex: 1;
+   padding: 5rem 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ .modern-hero-tag {
+   font-size: 0.9rem;
+   font-weight: 600;
+   color: #5a4fcf;
+   margin-bottom: 1rem;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+ }
+
+ .modern-hero-title {
+   font-size: 3.5rem;
+   font-weight: 700;
+   line-height: 1.2;
+   margin-bottom: 1.5rem;
+ }
+
+ .modern-hero-title span {
+   color: #5a4fcf;
+   position: relative;
+ }
+
+ .modern-hero-title span::after {
+   content: '';
+   position: absolute;
+   bottom: 5px;
+   left: 0;
+   width: 100%;
+   height: 12px;
+   background-color: rgba(90, 79, 207, 0.2);
+   z-index: -1;
+ }
+
+ .modern-hero-description {
+   font-size: 1.1rem;
+   color: #666;
+   max-width: 500px;
+   margin-bottom: 2.5rem;
+ }
+
+ .modern-hero-buttons {
+   display: flex;
+   gap: 1rem;
+ }
+
+ .modern-primary-btn {
+   background-color: #5a4fcf;
+   color: white;
+   padding: 1rem 2rem;
+   border-radius: 2rem;
+   text-decoration: none;
+   font-weight: 500;
+   transition: all 0.3s ease;
+   box-shadow: 0 4px 15px rgba(90, 79, 207, 0.3);
+ }
+
+ .modern-primary-btn:hover {
+   background-color: #4a3fb8;
+   transform: translateY(-2px);
+   box-shadow: 0 6px 20px rgba(90, 79, 207, 0.4);
+ }
+
+ .modern-secondary-btn {
+   background-color: transparent;
+   color: #5a4fcf;
+   padding: 1rem 2rem;
+   border-radius: 2rem;
+   text-decoration: none;
+   font-weight: 500;
+   transition: all 0.3s ease;
+   border: 1px solid #5a4fcf;
+ }
+
+ .modern-secondary-btn:hover {
+   background-color: rgba(90, 79, 207, 0.1);
+ }
+
+ .modern-hero-image {
+   flex: 1;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+ }
+
+ .modern-hero-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.8) 100%);
+ }
+
+
+ .modern-features-section {
+   padding: 6rem 5%;
+   background-color: #f9f9ff;
+ }
+
+ .modern-features-header {
+   text-align: center;
+   margin-bottom: 3rem;
+ }
+
+ .modern-features-subtitle {
+   display: inline-block;
+   font-size: 0.9rem;
+   font-weight: 600;
+   color: #5a4fcf;
+   margin-bottom: 1rem;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+ }
+
+ .modern-features-title {
+   font-size: 2.5rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+ }
+
+ .modern-feature-cards {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 2rem;
+ }
+
+ .modern-feature-card {
+   background-color: white;
+   border-radius: 1rem;
+   overflow: hidden;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+   transition: all 0.3s ease;
+ }
+
+ .modern-feature-card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+ }
+
+ .modern-card-image {
+   height: 250px;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+ }
+
+ .modern-card-content {
+   padding: 1.5rem;
+ }
+
+ .modern-feature-card h3 {
+   font-size: 1.5rem;
+   margin-bottom: 0.75rem;
+   color: #333;
+ }
+
+ .modern-feature-card p {
+   color: #666;
+   margin-bottom: 1.5rem;
+ }
+
+ .modern-card-link {
+   display: inline-flex;
+   align-items: center;
+   color: #5a4fcf;
+   font-weight: 500;
+   text-decoration: none;
+   transition: all 0.3s ease;
+ }
+
+ .modern-card-link span {
+   margin-left: 0.5rem;
+   transition: transform 0.3s ease;
+ }
+
+ .modern-card-link:hover {
+   color: #4a3fb8;
+ }
+
+ .modern-card-link:hover span {
+   transform: translateX(3px);
+ }
+
+ .modern-feature-highlight {
+   background-color: #5a4fcf;
+   color: white;
+ }
+
+ .modern-feature-highlight h3,
+ .modern-feature-highlight p {
+   color: white;
+ }
+
+ .modern-card-button {
+   display: inline-block;
+   background-color: white;
+   color: #5a4fcf;
+   padding: 0.75rem 1.5rem;
+   border-radius: 2rem;
+   text-decoration: none;
+   font-weight: 500;
+   transition: all 0.3s ease;
+ }
+
+ .modern-card-button:hover {
+   background-color: #f0f0ff;
+ }
+
+
+ .modern-testimonial-section {
+   padding: 6rem 5%;
+   position: relative;
+ }
+
+ .modern-testimonial-container {
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+
+ .modern-testimonial-header {
+   text-align: center;
+   margin-bottom: 3rem;
+ }
+
+ .modern-testimonial-subtitle {
+   display: inline-block;
+   font-size: 0.9rem;
+   font-weight: 600;
+   color: #5a4fcf;
+   margin-bottom: 1rem;
+   text-transform: uppercase;
+ }
+
+ .modern-testimonial-title {
+   font-size: 2.5rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+ }
+
+ .modern-testimonial-description {
+   color: #666;
+   max-width: 600px;
+   margin: 0 auto;
+ }
+
+ .modern-testimonial-content {
+   display: flex;
+   align-items: center;
+   gap: 3rem;
+   margin-top: 4rem;
+ }
+
+ .modern-testimonial-profiles {
+   flex: 1;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.5rem;
+ }
+
+ .modern-testimonial-profile {
+   width: 100%;
+   padding-top: 100%;
+   position: relative;
+   border-radius: 50%;
+   overflow: hidden;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease;
+ }
+
+ .modern-testimonial-profile:hover {
+   transform: scale(1.05);
+ }
+
+ .modern-testimonial-profile img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .modern-testimonial-card {
+   flex: 1;
+   background-color: white;
+   padding: 2.5rem;
+   border-radius: 1rem;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+   position: relative;
+ }
+
+ .modern-testimonial-card::before {
+   content: '"';
+   position: absolute;
+   top: 1rem;
+   left: 2rem;
+   font-size: 5rem;
+   color: rgba(90, 79, 207, 0.1);
+   font-family: serif;
+   line-height: 1;
+ }
+
+ .modern-testimonial-avatar {
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-bottom: 1.5rem;
+ }
+
+ .modern-testimonial-avatar img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .modern-testimonial-quote {
+   font-size: 1.1rem;
+   line-height: 1.8;
+   color: #555;
+   margin-bottom: 1.5rem;
+   position: relative;
+ }
+
+ .modern-testimonial-author {
+   font-weight: 700;
+   color: #333;
+ }
+
+ .modern-testimonial-author span {
+   display: block;
+   font-weight: 400;
+   font-size: 0.9rem;
+   color: #777;
+   margin-top: 0.25rem;
+ }
+
+
+ .modern-yoga-footer {
+   background-color: #1a1a2e;
+   color: white;
+   padding: 4rem 5% 2rem;
+ }
+
+ .modern-footer-content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin-bottom: 3rem;
+ }
+
+ .modern-footer-brand {
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+   margin-bottom: 1.5rem;
+ }
+
+ .modern-footer-brand img {
+   width: 2.5rem;
+   height: 2.5rem;
+   border-radius: 50%;
+   object-fit: cover;
+ }
+
+ .modern-footer-brand span {
+   font-weight: 700;
+   font-size: 1.25rem;
+ }
+
+ .modern-footer-links {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3rem;
+ }
+
+ .modern-footer-column {
+   flex: 1;
+   min-width: 150px;
+ }
+
+ .modern-footer-column h4 {
+   font-size: 1.1rem;
+   margin-bottom: 1.25rem;
+   color: #fff;
+ }
+
+ .modern-footer-column a {
+   display: block;
+   color: #bbb;
+   text-decoration: none;
+   margin-bottom: 0.75rem;
+   transition: color 0.3s ease;
+ }
+
+ .modern-footer-column a:hover {
+   color: #5a4fcf;
+ }
+
+ .modern-footer-bottom {
+   text-align: center;
+   padding-top: 2rem;
+   border-top: 1px solid rgba(255, 255, 255, 0.1);
+   color: #bbb;
+   font-size: 0.9rem;
+ }
+
+
+ @media (max-width: 1024px) {
+   .modern-hero-title {
+     font-size: 2.8rem;
+   }
+
+   .modern-testimonial-content {
+     flex-direction: column;
+   }
+
+   .modern-testimonial-profiles {
+     order: 2;
+     margin-top: 3rem;
+   }
+
+   .modern-testimonial-card {
+     order: 1;
+   }
+ }
+
+ @media (max-width: 768px) {
+   .modern-yoga-nav {
+     display: none;
+   }
+
+   .modern-mobile-menu {
+     display: block;
+   }
+
+   .modern-hero-section {
+     flex-direction: column;
+     padding-top: 5rem;
+   }
+
+   .modern-hero-content {
+     padding: 3rem 5%;
+   }
+
+   .modern-hero-image {
+     min-height: 400px;
+   }
+
+   .modern-feature-cards {
+     grid-template-columns: 1fr;
+   }
+ }
+
+ @media (max-width: 480px) {
+   .modern-hero-title {
+     font-size: 2.2rem;
+   }
+
+   .modern-hero-buttons {
+     flex-direction: column;
+   }
+
+   .modern-testimonial-profiles {
+     grid-template-columns: repeat(2, 1fr);
+   }
+ }
