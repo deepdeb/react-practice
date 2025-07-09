@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './YogaLandingPage.css'
 
 // Original imports with same file names
@@ -15,7 +15,62 @@ import profile6 from '../../assets/images/profile images/image6.jpg'
 import profile7 from '../../assets/images/profile images/image7.jpg'
 import profile8 from '../../assets/images/profile images/image8.jpg'
 
+const testimonials = [
+  {
+    img: profile1,
+    name: "Anika T.",
+    role: "Copywriter",
+    quote: "Raj Yoga's morning sessions transformed my daily routine. I'm more focused and calm.",
+  },
+  {
+    img: profile2,
+    name: "Natasha S.",
+    role: "Dentist",
+    quote: "The instructors here understand the true essence of yoga. I love the vibe.",
+  },
+  {
+    img: profile3,
+    name: "Brigette M.",
+    role: "Health Blogger",
+    quote: "I've practiced yoga at many places, but Raj Yoga's approach is truly holistic.",
+  },
+  {
+    img: profile4,
+    name: "Emma R.",
+    role: "Software Engineer",
+    quote: "Practicing yoga here helped relieve my back pain from long sitting hours.",
+  },
+  {
+    img: profile5,
+    name: "Sara D.",
+    role: "Yoga Learner",
+    quote: "I love the supportive community. It's my favorite part of the week!",
+  },
+  {
+    img: profile6,
+    name: "Olivia J.",
+    role: "Freelancer",
+    quote: "Raj Yoga is peaceful and energizing. A perfect combo!",
+  },
+  {
+    img: profile7,
+    name: "Lina K.",
+    role: "Dance Instructor",
+    quote: "Blending yoga with music sessions here is a treat for the soul.",
+  },
+  {
+    img: profile8,
+    name: "Emily R.",
+    role: "Fashion Designer",
+    quote: "Among the yoga communities I've been in, Raj Yoga stands out...",
+  }
+];
+
+
 const YogaLandingPage = () => {
+  const [activeIndex, setActiveIndex] = useState(testimonials.length - 1)
+  const activeTestimonial = testimonials[activeIndex]
+
   return (
     <div className="modern-yoga-container">
 
@@ -118,23 +173,23 @@ const YogaLandingPage = () => {
 
           <div className="modern-testimonial-content">
             <div className="modern-testimonial-profiles">
-              {[profile1, profile2, profile3, profile4, profile5, profile6, profile7].map((img, index) => (
-                <div key={index} className="modern-testimonial-profile">
-                  <img src={img} alt={`Student ${index + 1}`} />
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className={`modern-testimonial-profile ${index === activeIndex ? 'active' : ''}`} onClick={() => setActiveIndex(index)}>
+                  <img src={testimonial.img} alt={`Student ${index + 1}`} />
                 </div>
               ))}
             </div>
 
             <div className="modern-testimonial-card">
               <div className="modern-testimonial-avatar">
-                <img src={profile8} alt="Emily R." />
+                <img src={activeTestimonial.img} alt={activeTestimonial.name} />
               </div>
               <blockquote className="modern-testimonial-quote">
-                "Among the yoga communities I've been in, Raj Yoga stands out. Their instructors are knowledgeable, and the classes have helped me improve my focus and flexibility."
+                {activeTestimonial.quote}
               </blockquote>
               <div className="modern-testimonial-author">
-                <strong>Emily R.</strong>
-                <span>Client at Raj Yoga</span>
+                <strong>{activeTestimonial.name}</strong>
+                <span>{activeTestimonial.role}</span>
               </div>
             </div>
           </div>
