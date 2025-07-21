@@ -1,11 +1,11 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Lovable from './components/Lovable/Lovable';
+import YogaLandingPage from './components/YogaLandingPage/YogaLandingPage';
 
 function App() {
   return (
     <>
-      <Lovable/>
+      <YogaLandingPage/>
     </>
   )
 }
