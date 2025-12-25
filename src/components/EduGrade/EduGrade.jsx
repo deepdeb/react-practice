@@ -17,14 +17,10 @@ const EduGrade = () => {
 
 
       {/* Top black bar */}
-      <header className="flex justify-between items-center px-5 py-2 bg-black text-white text-sm">
+      <header className="flex items-center px-5 py-2 bg-black text-white text-sm">
         <div className="flex gap-4">
           <span>+0 (000) 000 00 00</span>
           <span>info@companyname.com</span>
-        </div>
-        <div className="flex gap-3">
-          <a href="#" className="text-yellow-400! no-underline! hover:underline!">Register</a>
-          <a href="#" className="text-yellow-400! no-underline! hover:underline!">Login</a>
         </div>
       </header>
 
@@ -45,15 +41,15 @@ const EduGrade = () => {
                 {/* navlinks  */}
                 <ul className="flex list-none p-0 m-0 gap-6">
                   {navLinks.map((link, index) => (
-                    <li key={index}><a href="#" className="text-gray-800 font-medium">{link}</a></li>
+                    <li key={index}><a href="#" className="text-gray-700 hover:text-yellow-400 transition-colors font-medium">{link}</a></li>
                   ))}
                 </ul>
 
 
                 {/* authlinks  */}
                 <div className="flex items-center gap-4">
-                  <a href="#" className="text-gray-800 font-medium">Login</a>
-                  <a href="#" className="bg-yellow-400 text-black font-bold px-4 py-2 rounded">Register</a>
+                  <a href="#" className="text-gray-700 font-medium hover:text-black transition-colors">Login</a>
+                  <a href="#" className="bg-yellow-400 text-black font-bold px-4 py-2 rounded hover:bg-yellow-500 transition-colors">Register</a>
                 </div>
               </div>
 
@@ -89,6 +85,36 @@ const EduGrade = () => {
               </div>
 
             </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      {/* Stats */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-6 lg:px-16">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center space-y-2">
+              <h3 className="text-3xl font-bold">10k+</h3>
+              <p className="text-gray-600">Students</p>
+            </div>
+            <div className="text-center space-y-2">
+              <h3 className="text-3xl font-bold">250+</h3>
+              <p className="text-gray-600">Courses</p>
+            </div>
+            <div className="text-center space-y-2">
+              <h3 className="text-3xl font-bold">98%</h3>
+              <p className="text-gray-600">Success Rate</p>
+            </div>
+            <div className="text-center space-y-2">
+              <h3 className="text-3xl font-bold">120+</h3>
+              <p className="text-gray-600">Expert Instructors</p>
+            </div>
+
           </div>
         </div>
       </section>
