@@ -1,233 +1,195 @@
+const navLinks = [
+  "Home",
+  "Courses",
+  "Event",
+  "Pages",
+  "Teachers",
+  "Shop",
+  "Blog",
+  "Contact"
+]
+
+
 const EduGrade = () => {
   return (
-    <div
-      className="app max-w-full mx-auto"
-      style={{
-        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        color: "#000",
-        background: "#fff",
-      }}
-    >
-      {/* Top bar */}
-      <header className="top-bar bg-black text-[#f0c000] flex justify-between py-[10px] px-[20px] text-sm">
-        <div className="contact-info flex gap-4">
+    <div className="font-sans bg-white">
+
+
+
+      {/* Top black bar */}
+      <header className="flex justify-between items-center px-5 py-2 bg-black text-white text-sm">
+        <div className="flex gap-4">
           <span>+0 (000) 000 00 00</span>
           <span>info@companyname.com</span>
         </div>
-        <div className="auth-links">
-          <a className="ml-[10px] text-[#f0c000] no-underline" href="#">
-            Register
-          </a>
-          <a className="ml-[10px] text-[#f0c000] no-underline" href="#">
-            Login
-          </a>
+        <div className="flex gap-3">
+          <a href="#" className="text-yellow-400! no-underline! hover:underline!">Register</a>
+          <a href="#" className="text-yellow-400! no-underline! hover:underline!">Login</a>
         </div>
       </header>
 
+
+
+
       {/* Navbar */}
-      <nav className="navbar flex justify-between items-center px-[20px] py-[15px] bg-white shadow-md">
-        <div className="logo text-[24px] font-bold">EDUGRADE</div>
-        <ul className="nav-links flex list-none p-0 m-0">
-          <li>
-            <a
-              className="no-underline text-black px-[15px] font-medium hover:text-[#f0c000] focus:text-[#f0c000]"
-              href="#"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              className="no-underline text-black px-[15px] font-medium hover:text-[#f0c000] focus:text-[#f0c000]"
-              href="#"
-            >
-              Courses
-            </a>
-          </li>
-          <li>
-            <a
-              className="no-underline text-black px-[15px] font-medium hover:text-[#f0c000] focus:text-[#f0c000]"
-              href="#"
-            >
-              Event
-            </a>
-          </li>
-          <li>
-            <a
-              className="no-underline text-black px-[15px] font-medium hover:text-[#f0c000] focus:text-[#f0c000]"
-              href="#"
-            >
-              Pages
-            </a>
-          </li>
-          <li>
-            <a
-              className="no-underline text-black px-[15px] font-medium hover:text-[#f0c000] focus:text-[#f0c000]"
-              href="#"
-            >
-              Teachers
-            </a>
-          </li>
-          <li>
-            <a
-              className="no-underline text-black px-[15px] font-medium hover:text-[#f0c000] focus:text-[#f0c000]"
-              href="#"
-            >
-              Shop
-            </a>
-          </li>
-          <li>
-            <a
-              className="no-underline text-black px-[15px] font-medium hover:text-[#f0c000] focus:text-[#f0c000]"
-              href="#"
-            >
-              Blog
-            </a>
-          </li>
-          <li>
-            <a
-              className="no-underline text-black px-[15px] font-medium hover:text-[#f0c000] focus:text-[#f0c000]"
-              href="#"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+      <nav className="shadow bg-white">
+        <div className="px-6 lg:px-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center justify-between h-16">
+
+              {/* heading  */}
+              <div className="text-2xl font-bold">EDUGRADE <span className='text-yellow-400'>.</span> </div>
+
+
+              <div className="flex items-center gap-8">
+                {/* navlinks  */}
+                <ul className="flex list-none p-0 m-0 gap-6">
+                  {navLinks.map((link, index) => (
+                    <li key={index}><a href="#" className="text-gray-800 font-medium">{link}</a></li>
+                  ))}
+                </ul>
+
+
+                {/* authlinks  */}
+                <div className="flex items-center gap-4">
+                  <a href="#" className="text-gray-800 font-medium">Login</a>
+                  <a href="#" className="bg-yellow-400 text-black font-bold px-4 py-2 rounded">Register</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </nav>
 
-      {/* Hero */}
-      <section
-        className="hero flex items-center justify-between text-white relative"
-        style={{
-          backgroundImage: "url('/hero.png')",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "right center",
-          backgroundSize: "cover",
-          height: "500px",
-          paddingLeft: "40px",
-          paddingRight: "40px",
-        }}
-      >
-        <div className="hero-text w-1/2 z-10">
-          <h5 className="text-[14px] tracking-[2px] text-[#f0c000]">
-            WE ARE HERE TO HELP YOU
-          </h5>
-          <h1 className="text-[48px] mt-[10px] mb-[10px]">WELCOME TO EDUREAD</h1>
-          <p className="text-[16px] mb-[20px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </p>
-          <button
-            className="bg-[#f0c000] border-none px-[25px] py-[12px] font-bold cursor-pointer text-black rounded-[3px]"
-            type="button"
-          >
-            GET STARTED
-          </button>
-        </div>
 
-        <div className="hero-image">
-          {/* Keeping <img /> as in original so it still renders if background fails */}
-          <img src="/hero.png" alt="hero" className="max-w-[420px] hidden" />
+
+
+
+      {/* Hero */}
+      <section className="bg-gray-50">
+        <div className="px-6 lg:px-16 py-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+
+              {/* text  */}
+              <div className="w-full lg:max-w-xl space-y-5 text-center lg:text-left">
+                <h5 className="text-sm tracking-widest text-yellow-400 font-medium">WE ARE HERE TO HELP YOU</h5>
+                <h1 className="text-4xl font-bold">WELCOME TO EDUGRADE</h1>
+                <p className="text-gray-700 leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button type="button" className="bg-yellow-400 text-black font-bold px-6 py-3 rounded hover:bg-yellow-500 transition-colors w-full lg:w-auto">GET STARTED</button>
+              </div>
+
+              {/* image */}
+              <div className="hidden lg:flex w-full lg:w-1/2 justify-end">
+                <img src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg" alt="image1" className='w-full max-w-md' />
+              </div>
+
+            </div>
+          </div>
         </div>
       </section>
+
+
+
+
 
       {/* Features */}
-      <section className="features bg-black text-white p-[60px] px-[40px] text-center">
-        <h2 className="text-[28px] mb-[30px]">BEST PLATFORM TO LEARN EVERYTHING</h2>
-        <div className="feature-cards flex justify-center gap-[20px]">
-          <div className="card bg-[#f0c000] p-[20px] rounded-[8px] text-black font-medium w-[200px] shadow-md">
-            Industry Professional UX Writers
-          </div>
-          <div className="card bg-[#f0c000] p-[20px] rounded-[8px] text-black font-medium w-[200px] shadow-md">
-            Try Before You Buy
-          </div>
-          <div className="card bg-[#f0c000] p-[20px] rounded-[8px] text-black font-medium w-[200px] shadow-md">
-            Dedicated Account Managers
+      <section className='text-center py-16 px-6 lg:px-16'>
+        <div className="max-w-6xl mx-auto">
+          <h2 className='text-2xl lg:text-3xl font-bold text-center mb-10'>BEST PLATFORM TO LEARN EVERYTHING</h2>
+          <div className='flex justify-center flex-col lg:flex-row gap-6'>
+            <div className='bg-yellow-400 text-black p-6 rounded-lg font-medium w-full lg:flex-1 flex items-center justify-center text-center shadow-md hover:shadow-lg transition-shadow duration-300'>Industry Professional UX Writers</div>
+            <div className='bg-yellow-400 text-black p-6 rounded-lg font-medium w-full lg:flex-1 flex items-center justify-center text-center shadow-md hover:shadow-lg transition-shadow duration-300'>Try Before You Buy</div>
+            <div className='bg-yellow-400 text-black p-6 rounded-lg font-medium w-full lg:flex-1 flex items-center justify-center text-center shadow-md hover:shadow-lg transition-shadow duration-300'>Dedicated Account Managers</div>
           </div>
         </div>
       </section>
+
+
+
+
 
       {/* About & Events */}
-      <section className="about-events flex justify-between items-center p-[60px] px-[40px]">
-        <div className="about w-1/2">
-          <h3 className="text-[32px] mb-[20px]">
-            Welcome to <br /> Write My Disso
-          </h3>
-          <p className="text-[15px] text-[#333333] leading-[1.5]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
-          </p>
-          <button
-            className="mt-[20px] bg-[#f0c000] border-none px-[20px] py-[10px] font-bold cursor-pointer text-black rounded-[3px]"
-            type="button"
-          >
-            READ MORE
-          </button>
-        </div>
+      <section className='px-6 lg:px-16 py-16'>
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row">
+            {/* about/welcome div  */}
+            <div className='w-full lg:w-7/12 space-y-5'>
+              <h3 className='text-3xl font-bold'>
+                Welcome to <br /> Write My Disso
+              </h3>
+              <p className='text-gray-700 leading-relaxed'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+              </p>
+              <button type="button" className='bg-yellow-400 text-black font-bold py-2 px-5 rounded hover:bg-yellow-500 transition-colors'>READ MORE</button>
+            </div>
 
-        <div className="events w-[45%] bg-[#f0c000] p-[20px] rounded-[8px] text-black">
-          <h3 className="text-[22px] mb-[15px]">UPCOMING EVENTS</h3>
-          <ul className="list-none p-0 m-0">
-            <li className="mb-[15px] border-b-[1px] border-black pb-[10px]">
-              <strong>2 December 2019</strong>
-              <p>
-                Sed ut perspiciatis unde omnis iste.
-                <br />
-                10:00 AM - 3:00 PM • Re Auditorium
-              </p>
-            </li>
-            <li className="mb-[15px] border-b-[1px] border-black pb-[10px]">
-              <strong>2 December 2019</strong>
-              <p>
-                Lorem ipsum gravida nibh vel.
-                <br />
-                10:00 AM - 3:00 PM • Re Auditorium
-              </p>
-            </li>
-            <li className="mb-[15px] border-b-[1px] border-black pb-[10px]">
-              <strong>2 December 2019</strong>
-              <p>
-                Morbi accumsan ipsum velit.
-                <br />
-                10:00 AM - 3:00 PM • Re Auditorium
-              </p>
-            </li>
-          </ul>
+            {/* upcoming events  */}
+            <div className='w-full lg:w-5/12 bg-yellow-400 p-6 rounded-lg'>
+              <h3 className='text-xl! font-bold! mb-4'>UPCOMING EVENTS</h3>
+              <ul className='list-none p-0 m-0 space-y-4'>
+                <li className='pb-4 border-b border-black/20 last:border-b-0'>
+                  <strong className='block font-semibold mb-1 text-lg text-black' >2 December 2019</strong>
+                  <p className="text-sm leading-relaxed">
+                    Sed ut perspiciatis unde omnis iste.
+                    <br />
+                    10:00 AM - 3:00 PM • Re Auditorium
+                  </p>
+                </li>
+                <li className='pb-4 border-b border-black/20 last:border-b-0'>
+                  <strong className='block font-semibold mb-1 text-lg text-black' >2 December 2019</strong>
+                  <p className="text-sm leading-relaxed">
+                    Lorem ipsum gravida nibh vel.
+                    <br />
+                    10:00 AM - 3:00 PM • Re Auditorium
+                  </p>
+                </li>
+                <li className='pb-4 border-b border-black/20 last:border-b-0'>
+                  <strong className='block font-semibold mb-1 text-lg text-black' >2 December 2019</strong>
+                  <p className="text-sm leading-relaxed">
+                    Morbi accumsan ipsum velit.
+                    <br />
+                    10:00 AM - 3:00 PM • Re Auditorium
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
+
+
+
 
       {/* Apply Section */}
-      <section className="apply-section flex justify-between bg-white p-[60px] px-[40px]">
-        <div className="apply-card w-[48%] bg-[#f0c000] p-[30px] rounded-[6px] text-black">
-          <h4 className="text-[20px] mb-[10px]">APPLY FOR FALL 2019</h4>
-          <p className="text-[14px] mb-[20px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-          </p>
-          <button
-            className="bg-black text-white border-none px-[20px] py-[10px] font-bold rounded-[3px] cursor-pointer"
-            type="button"
-          >
-            Apply Now
-          </button>
-        </div>
+      <section className="px-6 lg:px-16 py-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row gap-6">
+            <div className="bg-yellow-400 text-black p-8 rounded-lg w-full lg:w-1/2 flex flex-col justify-between">
+              <h4 className="text-lg font-bold mb-4">APPLY FOR FALL 2019</h4>
+              <p className="text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+              <button type="button" className="bg-black text-white font-bold px-5 py-2 rounded hover:bg-gray-800 transition-colors duration-300 cursor-pointer">Apply Now</button>
+            </div>
 
-        <div className="apply-card w-[48%] bg-[#f0c000] p-[30px] rounded-[6px] text-black">
-          <h4 className="text-[20px] mb-[10px]">APPLY FOR SCHOLARSHIP</h4>
-          <p className="text-[14px] mb-[20px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-          </p>
-          <button
-            className="bg-black text-white border-none px-[20px] py-[10px] font-bold rounded-[3px] cursor-pointer"
-            type="button"
-          >
-            Apply Now
-          </button>
+            <div className="bg-yellow-400 text-black p-8 rounded-lg w-full lg:w-1/2 flex flex-col justify-between">
+              <h4 className="text-lg font-bold mb-4">APPLY FOR SCHOLARSHIP</h4>
+              <p className="text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+              <button type="button" className="bg-black text-white font-bold px-5 py-2 rounded hover:bg-gray-800 transition-colors duration-300 cursor-pointer">Apply Now</button>
+            </div>
+          </div>
         </div>
       </section>
 
+
+
+
       {/* Footer */}
-      <footer className="footer p-[40px] text-center">
-        <h3 className="text-[24px] font-bold">Featured Courses</h3>
-        {/* Add your featured course cards here */}
+      <footer className="px-10 py-12 text-center bg-gray-100">
+        <h3 className="text-xl font-bold">Featured Courses</h3>
       </footer>
     </div>
   );
