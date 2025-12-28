@@ -1,10 +1,10 @@
-import ExhaleLandingTwo from "./components/ExhaleLanding/ExhaleLandingTwo"
+import Journeya from "./components/Journeya"
 
 
 function App() {
   return (
     <>
-      <ExhaleLandingTwo />
+    <Journeya/>
     </>
   )
 }
