@@ -1,11 +1,10 @@
-import BackgroundRemover from "./components/BackgroundRemover/BackgroundRemover"
-import EduGrade from "./components/EduGrade/EduGrade"
+import ExhaleLandingTwo from "./components/ExhaleLanding/ExhaleLandingTwo"
 
 
 function App() {
   return (
     <>
-      <EduGrade />
+      <ExhaleLandingTwo />
     </>
   )
 }
