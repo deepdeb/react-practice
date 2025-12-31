@@ -1,7 +1,7 @@
 import React from 'react';
-import { 
-  Facebook, Instagram, Youtube, Phone, Search, 
-  Briefcase, Mountain, Building2, Landmark, Palmtree, Tent 
+import {
+  Facebook, Instagram, Youtube, Phone, Search,
+  Briefcase, Mountain, Building2, Landmark, Palmtree, Tent
 } from 'lucide-react';
 
 const Journeya = () => {
@@ -42,7 +42,7 @@ const Journeya = () => {
           <a href="#">Hotels</a>
           <a href="#">Pages</a>
           <a href="#">Contact</a>
-          <button className="bg-indigo-600 text-white p-2 rounded-full"><Search size={20} /></button>
+          <button className="bg-indigo-600 text-white p-2 rounded-sm"><Search size={20} /></button>
         </div>
       </nav>
 
@@ -50,9 +50,9 @@ const Journeya = () => {
       <section className="relative h-150 flex flex-col items-center justify-center text-center px-4">
         {/* Background Image Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2070" 
-            alt="Mountains" 
+          <img
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2070"
+            alt="Mountains"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/30"></div>
@@ -63,25 +63,26 @@ const Journeya = () => {
           <p className="text-xl mb-12">Discover amazing places at exclusive deals</p>
 
           {/* Search Bar */}
-          <div className="bg-white rounded-full p-2 md:pl-10 shadow-2xl flex flex-col md:flex-row items-center gap-4 max-w-5xl mx-auto">
-            <div className="flex-1 text-left w-full border-r border-slate-200 pr-4">
+          <div className="bg-transparent md:bg-white rounded-lg md:rounded-full p-2 md:pl-10 shadow-2xl flex flex-col md:flex-row items-center gap-4 max-w-5xl mx-auto">
+            <div className="bg-white md:bg-transparent max-md:p-2 max-md:rounded-sm md:flex-1 text-left w-full border-r border-slate-200 pr-4">
               <label className="block text-slate-900 font-bold text-sm">Keyword</label>
               <input type="text" placeholder="Type your keyword here..." className="text-slate-500 outline-none w-full" />
             </div>
-            <div className="flex-1 text-left w-full border-r border-slate-200 pr-4">
+            <div className="bg-white md:bg-transparent max-md:p-2 max-md:rounded-sm md:flex-1 text-left w-full border-r border-slate-200 pr-4">
               <label className="block text-slate-900 font-bold text-sm">Destination</label>
               <select className="text-slate-500 outline-none w-full bg-transparent">
                 <option>Where to?</option>
               </select>
             </div>
-            <div className="flex-1 text-left w-full">
+            <div className="bg-white md:bg-transparent max-md:p-2 max-md:rounded-sm md:flex-1 text-left w-full border-r border-slate-200 pr-4">
               <label className="block text-slate-900 font-bold text-sm">Duration</label>
               <select className="text-slate-500 outline-none w-full bg-transparent">
                 <option>Check in - Check out</option>
               </select>
             </div>
-            <button className="bg-indigo-600 hover:bg-indigo-700 transition p-6 rounded-full text-white">
+            <button className="bg-indigo-600 hover:bg-indigo-700 transition px-6 py-3 md:py-6 rounded-2xl md:rounded-full text-white max-md:flex max-md:gap-2">
               <Search size={24} />
+              <span className="md:hidden font-semibold">Search</span>
             </button>
           </div>
         </div>
@@ -93,7 +94,7 @@ const Journeya = () => {
           <div>
             <h2 className="text-4xl font-bold mb-4">Choose Tour Types</h2>
             <p className="text-slate-500 max-w-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
