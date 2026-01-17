@@ -1,10 +1,11 @@
-import Journeya from "./components/Journeya"
+import YogaLandingPage from "./components/YogaLandingPage"
+
 
 
 function App() {
   return (
     <>
-    <Journeya/>
+      <YogaLandingPage />
     </>
   )
 }
