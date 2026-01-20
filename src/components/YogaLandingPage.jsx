@@ -107,7 +107,6 @@ const YogaLandingPage = () => {
           </div>
         </div>
         <div className="flex-1 bg-cover bg-center relative min-h-100 md:min-h-0" style={{ backgroundImage: `url(${yogaImg2})` }}>
-          <div className="absolute inset-0 bg-linear-to-br from-white/10 to-white/80"></div>
         </div>
       </section>
 
@@ -115,7 +114,7 @@ const YogaLandingPage = () => {
       <section className="py-24 px-[5%] bg-[#f9f9ff]">
         <div className="text-center mb-12">
           <span className="inline-block text-[0.9rem] font-semibold text-[#5a4fcf] uppercase tracking-[1px] mb-4">Our Benefits</span>
-          <h2 className="text-[2.5rem] font-bold mb-4">Transform Your Practice</h2>
+          <h2 className="text-[2.5rem] font-bold">Transform Your Practice</h2>
         </div>
 
         <div className="grid gap-8" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
@@ -170,7 +169,7 @@ const YogaLandingPage = () => {
             </div>
 
             <div className="flex-1 bg-white p-10 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] order-1 md:order-2 relative max-w-full">
-              <div className="w-20 h-20 rounded-full overflow-hidden mb-6">
+              <div className="w-24 h-24 rounded-full overflow-hidden mb-6">
                 <img src={activeTestimonial.img} alt={activeTestimonial.name} className="w-full h-full object-cover" />
               </div>
               <blockquote className="text-[1.1rem] leading-[1.8] text-[#555555] mb-6 relative">{activeTestimonial.quote}</blockquote>
