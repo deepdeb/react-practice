@@ -1,7 +1,5 @@
 import YogaLandingPage from "./components/YogaLandingPage"
 
-
-
 function App() {
   return (
     <>

@@ -90,11 +90,11 @@ export default function Gallery({ className = "", thumbnailsPerPage = 7 }) {
             {/* Gallery stage */}
             <div className="relative bg-gray-900 text-white overflow-hidden shadow-lg">
                 {/* Main image */}
-                <div className="w-full h-[520px] sm:h-[520px] md:h-[520px] lg:h-[520px] flex items-center justify-center bg-black">
+                <div className="w-full h-130 sm:h-130 md:h-130 lg:h-130 flex items-center justify-center bg-black">
                     <img
                         src={images[current].src}
                         alt={images[current].title}
-                        className="max-w-full max-h-[100%] object-cover w-full h-full opacity-100 transition-opacity duration-300"
+                        className="max-w-full max-h-full object-cover w-full h-full opacity-100 transition-opacity duration-300"
                     />
 
                     {/* Left arrow on image */}

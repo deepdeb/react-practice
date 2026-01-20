@@ -65,6 +65,33 @@ const testimonials = [
   }
 ];
 
+const instructors = [
+  {
+    img: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    name: "Alexa Carter",
+    specialization: "Hatha & Ashtanga Specialist",
+    badge: "500+ hours certified",
+    description: "With 8 years of teaching experience, Priya focuses on alignment and breath awareness.",
+    tags: ["Beginners", "Advanced"]
+  },
+  {
+    img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    name: "Monica Alexandro",
+    specialization: "Kundalini & Meditation",
+    badge: "Meditation Expert",
+    description: "Amit combines traditional yoga with modern mindfulness techniques for holistic wellness.",
+    tags: ["Meditation", "All Levels"]
+  },
+  {
+    img: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    name: "Maya Reddy",
+    specialization: "Vinyasa & Restorative Yoga",
+    badge: "RYT Certified",
+    description: "Maya's healing approach helps students find balance through gentle flows and restorative poses.",
+    tags: ["Therapeutic", "Women's Health"]
+  }
+];
+
 const YogaLandingPage = () => {
   const [activeIndex, setActiveIndex] = useState(testimonials.length - 1)
   const activeTestimonial = testimonials[activeIndex]
@@ -150,8 +177,65 @@ const YogaLandingPage = () => {
         </div>
       </section>
 
+
+      {/* Expert Instructors Section */}
+      <section className="py-24 px-[5%] bg-white" id="trainers">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="inline-block text-[0.9rem] font-semibold text-[#5a4fcf] uppercase tracking-[1px] mb-4">Our Guides</span>
+            <h2 className="text-[2.5rem] font-bold mb-4">Meet Our Instructors</h2>
+            <p className="text-[#666666] max-w-150 mx-auto">Learn from certified yoga experts with years of experience and deep spiritual knowledge.</p>
+          </div>
+
+          <div className="grid gap-8 mb-16" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+            {/* Instructor cards mapped from data */}
+            {instructors.map((instructor, index) => (
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition-all hover:transform hover:-translate-y-2.5 hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)]">
+                <div className="h-72 relative overflow-hidden">
+                  <img
+                    src={instructor.img}
+                    alt={instructor.name}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full">
+                    <span className="text-[#5a4fcf] font-medium text-sm">{instructor.badge}</span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-[1.5rem] font-bold mb-1 text-[#333333]">{instructor.name}</h3>
+                  <p className="text-[#5a4fcf] font-medium mb-4">{instructor.specialization}</p>
+                  <p className="text-[#666666] mb-6">{instructor.description}</p>
+                  <div className="flex items-center justify-between">
+                    <a href="#" className="text-[#5a4fcf] font-medium text-sm hover:underline">View schedule</a>
+                    <div className="flex gap-2">
+                      {instructor.tags.map((tag, index) => (
+                        <span key={index} className="text-xs bg-[#f0f0ff] text-[#5a4fcf] px-3 py-1 rounded-full">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Join Team CTA Card */}
+          <div className="rounded-2xl overflow-hidden transition-all bg-linear-to-br from-[#5a4fcf] to-[#8a7cff] text-white shadow-[0_10px_30px_rgba(0,0,0,0.05)] relative">
+            <div className="h-72 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1549576490-b0b4831ef60a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80)', opacity: 0.2 }}></div>
+            <div className="absolute inset-0 flex flex-col justify-center items-center p-8 text-center">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                <span className="text-2xl">+</span>
+              </div>
+              <h3 className="text-[1.5rem] font-bold mb-3">Join Our Team</h3>
+              <p className="mb-6 opacity-90">Passionate about yoga? We're always looking for dedicated instructors.</p>
+              <a href="#" className="inline-block bg-white text-[#5a4fcf] px-6 py-3 rounded-4xl font-medium transition-all hover:bg-[#f0f0ff]">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* Modern Testimonial Section */}
-      <section className="py-24 px-[5%] relative" id="reviews">
+      <section className="py-24 px-[5%] relative bg-[#f9f9ff]" id="reviews">
         <div className="max-w-300 mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block text-[0.9rem] font-semibold text-[#5a4fcf] uppercase tracking-[1px] mb-4">Voices of Change</span>
@@ -160,7 +244,7 @@ const YogaLandingPage = () => {
           </div>
 
           <div className="flex items-center gap-12 mt-16 flex-col md:flex-row">
-            <div className="flex-1 grid grid-cols-3 gap-6 order-2 md:order-1" style={{minWidth:0}}>
+            <div className="flex-1 grid grid-cols-3 gap-6 order-2 md:order-1" style={{ minWidth: 0 }}>
               {testimonials.map((testimonial, index) => (
                 <div key={index} onClick={() => setActiveIndex(index)} className={`w-full pt-[100%] relative rounded-full overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.1)] transition-all cursor-pointer ${index === activeIndex ? 'scale-[1.05]' : ''}`}>
                   <img src={testimonial.img} alt={`Student ${index + 1}`} className="absolute top-0 left-0 w-full h-full object-cover" />

@@ -1,4 +1,4 @@
-import image from '../../assets/images/loginform assets/Desktop.jpg'
+import image from '../assets/images/loginform assets/Desktop.jpg'
 
 const LoginForm = () => {
     return (
@@ -31,7 +31,7 @@ const LoginForm = () => {
                     </p>
 
                 </div>
-                <img src={image} alt="" className='w-[450px] object-cover xl:rounded-tr-2xl xl:rounded-br-2xl xl:block hidden' />
+                <img src={image} alt="" className='w-112.5 object-cover xl:rounded-tr-2xl xl:rounded-br-2xl xl:block hidden' />
             </div>
         </section>
     )
