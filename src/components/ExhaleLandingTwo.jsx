@@ -33,10 +33,10 @@ const ExhaleLandingTwo = () => {
             id: 1,
             quote:
                 "First I’ve paid for online yoga program. I can feel my whole approach to life changing by utilising all of the program content",
-            name: "Bessie Williams",
+            name: "Ivan Williams",
             location: "California",
             image: profile6,
-            alt: "Bessie Cooper",
+            alt: "Ivan Williams",
         },
         {
             id: 2,
@@ -45,7 +45,7 @@ const ExhaleLandingTwo = () => {
             name: "Brett Smith",
             location: "New York",
             image: profile7,
-            alt: "Anna Smith",
+            alt: "Brett Smith",
         },
     ];
 
