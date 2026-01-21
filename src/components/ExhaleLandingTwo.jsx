@@ -1,11 +1,13 @@
-import profile1 from "../../assets/images/profile images/image1.jpg";
-import profile2 from "../../assets/images/profile images/image2.jpg";
-import profile3 from "../../assets/images/profile images/image3.jpg";
-import profile4 from "../../assets/images/profile images/image4.jpg";
-import profile5 from "../../assets/images/profile images/image5.jpg";
-import profile6 from "../../assets/images/profile images/image6.jpg";
-import profile7 from "../../assets/images/profile images/image7.jpg";
-import yoga2 from "../../assets/images/yoga6.jpg";
+const profile1 = "https://images.unsplash.com/photo-1502685104226-ee32379fefbe";
+const profile2 = "https://images.unsplash.com/photo-1494790108377-be9c29b29330";
+const profile3 = "https://images.unsplash.com/photo-1527980965255-d3b416303d12";
+const profile4 = "https://images.unsplash.com/photo-1544723795-3fb6469f5b39";
+const profile5 = "https://images.unsplash.com/photo-1552058544-f2b08422138a";
+const profile6 = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e";
+const profile7 = "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde";
+
+const yoga2 = "https://images.unsplash.com/photo-1588040217484-7d484d97dbe4?q=80&w=1185&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
 import { FiMenu } from "react-icons/fi";
 
 const ExhaleLandingTwo = () => {
@@ -61,7 +63,7 @@ const ExhaleLandingTwo = () => {
             {/* NAVBAR */}
             <header className="border-b border-slate-200 bg-white">
                 <div className="max-w-7xl mx-auto flex items-center  justify-between px-6 py-4">
-                    <h2 className="text-xl font-semibold">Breath of Balance</h2>
+                    <h2 className="text-xl font-semibold">Breath of Balance .</h2>
 
                     <nav className="hidden sm:flex sm:gap-8">
                         {navLinks.map((link, index) => (
