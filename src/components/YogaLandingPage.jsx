@@ -180,7 +180,7 @@ const YogaLandingPage = () => {
 
       {/* Expert Instructors Section */}
       <section className="py-24 px-[5%] bg-white" id="trainers">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-8xl mx-auto">
           <div className="text-center mb-16">
             <span className="inline-block text-[0.9rem] font-semibold text-[#5a4fcf] uppercase tracking-[1px] mb-4">Our Guides</span>
             <h2 className="text-[2.5rem] font-bold mb-4">Meet Our Instructors</h2>
@@ -236,7 +236,7 @@ const YogaLandingPage = () => {
 
       {/* Modern Testimonial Section */}
       <section className="py-24 px-[5%] relative bg-[#f9f9ff]" id="reviews">
-        <div className="max-w-300 mx-auto">
+        <div className="max-w-8xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block text-[0.9rem] font-semibold text-[#5a4fcf] uppercase tracking-[1px] mb-4">Voices of Change</span>
             <h2 className="text-[2.5rem] font-bold mb-4">Student Experiences</h2>
@@ -246,7 +246,7 @@ const YogaLandingPage = () => {
           <div className="flex items-center gap-12 mt-16 flex-col md:flex-row">
             <div className="flex-1 grid grid-cols-3 gap-6 order-2 md:order-1" style={{ minWidth: 0 }}>
               {testimonials.map((testimonial, index) => (
-                <div key={index} onClick={() => setActiveIndex(index)} className={`w-full pt-[100%] relative rounded-full overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.1)] transition-all cursor-pointer ${index === activeIndex ? 'scale-[1.05]' : ''}`}>
+                <div key={index} onClick={() => setActiveIndex(index)} className={`w-full pt-[100%] relative rounded-full overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.1)] transition-all cursor-pointer ${index === activeIndex ? 'scale-[1.05] outline-6 outline-[#5a4fcf]' : ''}`}>
                   <img src={testimonial.img} alt={`Student ${index + 1}`} className="absolute top-0 left-0 w-full h-full object-cover" />
                 </div>
               ))}
