@@ -1,18 +1,20 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 // Original imports with same file names
-import yogaLogo from '../assets/logos/logo.jpeg'
-import yogaImg2 from '../assets/images/yoga2.jpg'
-import yogaImg3 from '../assets/images/yoga3.jpg'
-import yogaImg4 from '../assets/images/yoga4.jpg'
-import profile1 from '../assets/images/profile images/image1.jpg'
-import profile2 from '../assets/images/profile images/image2.jpg'
-import profile3 from '../assets/images/profile images/image3.jpg'
-import profile4 from '../assets/images/profile images/image4.jpg'
-import profile5 from '../assets/images/profile images/image5.jpg'
-import profile6 from '../assets/images/profile images/image6.jpg'
-import profile7 from '../assets/images/profile images/image7.jpg'
-import profile8 from '../assets/images/profile images/image8.jpg'
+import yogaLogo from '../assets/logos/logo.png'
+const yogaImg2 = 'https://images.pexels.com/photos/8436842/pexels-photo-8436842.jpeg'
+const yogaImg3 = 'https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=1200&q=80'
+const yogaImg4 = 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80'
+
+// Testimonial profile images
+const profile1 = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80'
+const profile2 = 'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=400&q=80'
+const profile3 = 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80'
+const profile4 = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80'
+const profile5 = 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80'
+const profile6 = 'https://images.unsplash.com/photo-1545996124-0501ebae84d0?auto=format&fit=crop&w=400&q=80'
+const profile7 = 'https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&w=400&q=80'
+const profile8 = 'https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&w=400&q=80'
 
 const testimonials = [
   {
@@ -23,7 +25,7 @@ const testimonials = [
   },
   {
     img: profile2,
-    name: "Natasha S.",
+    name: "Denver S.",
     role: "Dentist",
     quote: "The instructors here understand the true essence of yoga. I love the vibe.",
   },
@@ -35,7 +37,7 @@ const testimonials = [
   },
   {
     img: profile4,
-    name: "Emma R.",
+    name: "Eric R.",
     role: "Software Engineer",
     quote: "Practicing yoga here helped relieve my back pain from long sitting hours.",
   },
@@ -47,7 +49,7 @@ const testimonials = [
   },
   {
     img: profile6,
-    name: "Olivia J.",
+    name: "Chris J.",
     role: "Freelancer",
     quote: "Raj Yoga is peaceful and energizing. A perfect combo!",
   },
@@ -65,32 +67,34 @@ const testimonials = [
   }
 ];
 
+
 const instructors = [
   {
-    img: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    name: "Alexa Carter",
+    img: 'https://images.pexels.com/photos/6648534/pexels-photo-6648534.jpeg',
+    name: "Ivan Carter",
     specialization: "Hatha & Ashtanga Specialist",
     badge: "500+ hours certified",
-    description: "With 8 years of teaching experience, Priya focuses on alignment and breath awareness.",
+    description: "With 8 years of teaching experience, Ivan focuses on alignment and breath awareness.",
     tags: ["Beginners", "Advanced"]
   },
   {
-    img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    img: 'https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=600&q=80',
     name: "Monica Alexandro",
     specialization: "Kundalini & Meditation",
     badge: "Meditation Expert",
-    description: "Amit combines traditional yoga with modern mindfulness techniques for holistic wellness.",
+    description: "Monica combines traditional yoga with modern mindfulness techniques for holistic wellness.",
     tags: ["Meditation", "All Levels"]
   },
   {
-    img: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    img: 'https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=600&q=80',
     name: "Maya Reddy",
     specialization: "Vinyasa & Restorative Yoga",
     badge: "RYT Certified",
     description: "Maya's healing approach helps students find balance through gentle flows and restorative poses.",
     tags: ["Therapeutic", "Women's Health"]
   }
-];
+]
+
 
 const YogaLandingPage = () => {
   const [activeIndex, setActiveIndex] = useState(testimonials.length - 1)
@@ -243,13 +247,24 @@ const YogaLandingPage = () => {
             <p className="text-[#666666] max-w-150 mx-auto">See how our members have transformed their lives through yoga.</p>
           </div>
 
-          <div className="flex items-center gap-12 mt-16 flex-col md:flex-row">
-            <div className="flex-1 grid grid-cols-3 gap-6 order-2 md:order-1" style={{ minWidth: 0 }}>
-              {testimonials.map((testimonial, index) => (
-                <div key={index} onClick={() => setActiveIndex(index)} className={`w-full pt-[100%] relative rounded-full overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.1)] transition-all cursor-pointer ${index === activeIndex ? 'scale-[1.05] outline-6 outline-[#5a4fcf]' : ''}`}>
-                  <img src={testimonial.img} alt={`Student ${index + 1}`} className="absolute top-0 left-0 w-full h-full object-cover" />
-                </div>
-              ))}
+          <div className="flex items-center gap-12 mt-16 flex-col lg:flex-row">
+            <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-8 md:gap-8 order-2 md:order-1">
+              {testimonials.map((testimonial, index) => {
+                const isActive = index === activeIndex;
+                return (
+                  <div
+                    key={index}
+                    onClick={() => setActiveIndex(index)}
+                    className={`relative group cursor-pointer transition-all duration-500 ease-in-out aspect-square rounded-full overflow-hidden ${isActive ? 'scale-110 z-10 ring-4 ring-[#5a4fcf] ring-offset-4 shadow-xl' : 'scale-100 grayscale hover:grayscale-0 opacity-70 hover:opacity-100 shadow-md'}`}
+                  >
+                    <img
+                      src={testimonial.img}
+                      alt={testimonial.name}
+                      className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                );
+              })}
             </div>
 
             <div className="flex-1 bg-white p-10 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] order-1 md:order-2 relative max-w-full">
@@ -268,24 +283,26 @@ const YogaLandingPage = () => {
       <footer className="bg-[#1a1a2e] text-white py-16 px-[5%]">
         <div className="flex flex-wrap justify-around mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <img src={yogaLogo} alt="Raj Yoga" className="w-10 h-10 rounded-full object-cover" />
+            <div className='w-10 h-10 overflow-hidden'>
+              <img src={yogaLogo} alt="Raj Yoga" className="w-full scale-110 rounded-lg object-cover" />
+            </div>
             <span className="font-bold text-[1.25rem]">RAJ YOGA</span>
           </div>
 
-          <div className="flex flex-wrap gap-12">
-            <div className="min-w-37.5">
+          <div className="flex flex-wrap gap-20 md:gap-30">
+            <div className="">
               <h4 className="text-[1.1rem] mb-5 text-white">About</h4>
               <a className="block text-[#bbbbbb] no-underline mb-3 hover:text-[#5a4fcf]">Our Story</a>
               <a className="block text-[#bbbbbb] no-underline mb-3 hover:text-[#5a4fcf]">Teachers</a>
               <a className="block text-[#bbbbbb] no-underline mb-3 hover:text-[#5a4fcf]">Philosophy</a>
             </div>
-            <div className="min-w-37.5">
+            <div className="">
               <h4 className="text-[1.1rem] mb-5 text-white">Classes</h4>
               <a className="block text-[#bbbbbb] no-underline mb-3 hover:text-[#5a4fcf]">Schedule</a>
               <a className="block text-[#bbbbbb] no-underline mb-3 hover:text-[#5a4fcf]">Pricing</a>
               <a className="block text-[#bbbbbb] no-underline mb-3 hover:text-[#5a4fcf]">Workshops</a>
             </div>
-            <div className="min-w-37.5">
+            <div className="">
               <h4 className="text-[1.1rem] mb-5 text-white">Connect</h4>
               <a className="block text-[#bbbbbb] no-underline mb-3 hover:text-[#5a4fcf]">Contact</a>
               <a className="block text-[#bbbbbb] no-underline mb-3 hover:text-[#5a4fcf]">Instagram</a>
