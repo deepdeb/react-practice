@@ -1,9 +1,10 @@
+import BackgroundRemover from "./components/BackgroundRemover"
 import Lovable from "./components/Lovable"
 
 function App() {
   return (
     <>
-    <Lovable/>
+    <BackgroundRemover/>
     </>
   )
 }
