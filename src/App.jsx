@@ -1,9 +1,9 @@
-import ExhaleLandingTwo from "./components/ExhaleLandingTwo"
+import Lovable from "./components/Lovable"
 
 function App() {
   return (
     <>
-      <ExhaleLandingTwo />
+    <Lovable/>
     </>
   )
 }
