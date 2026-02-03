@@ -63,7 +63,7 @@ const ExhaleLandingTwo = () => {
             {/* NAVBAR */}
             <header className="border-b border-slate-200 bg-white">
                 <div className="max-w-7xl mx-auto flex items-center  justify-between px-6 py-4">
-                    <h2 className="text-xl font-semibold">Breath of Balance .</h2>
+                    <h2 className="text-xl font-bold bg-linear-to-r from-slate-900 to-amber-600 bg-clip-text text-transparent">Breath of Balance .</h2>
 
                     <nav className="hidden sm:flex sm:gap-8">
                         {navLinks.map((link, index) => (
@@ -95,7 +95,7 @@ const ExhaleLandingTwo = () => {
                     {/* right content  */}
                     <div className="flex flex-col justify-center">
                         {/* heading  */}
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight bg-linear-to-r from-slate-900 to-amber-600 bg-clip-text text-transparent">
                             Explore Yourself
                             <br />
                             Explore Yoga
@@ -111,7 +111,7 @@ const ExhaleLandingTwo = () => {
                         <div className="mt-8 flex flex-col gap-6">
 
                             <div>
-                                <button className="px-6 py-3 bg-slate-900 text-white text-sm sm:text-base font-medium rounded-xl hover:bg-slate-800 transition">Join Now</button>
+                                <button className="px-6 py-3 bg-linear-to-r from-slate-900 to-amber-600 hover:from-slate-700 hover:to-amber-400 text-white text-sm sm:text-base font-medium rounded-xl hover:bg-slate-800 transition cursor-pointer">Join Now</button>
                             </div>
 
                             <div className="flex flex-col sm:flex-row sm:items-end flex-wrap gap-3 sm:gap-6">
@@ -189,7 +189,7 @@ const ExhaleLandingTwo = () => {
                         {testimonials.map(t => (
                             <div key={t.id} className="bg-slate-50 rounded-2xl p-8 shadow-sm">
                                 <p className="text-slate-700 text-base leading-relaxed">
-                                    {t.quote}
+                                    "{t.quote}"
                                 </p>
 
                                 <div className="mt-6 flex items-center gap-4">
