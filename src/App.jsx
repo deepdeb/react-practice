@@ -1,10 +1,9 @@
-import BackgroundRemover from "./components/BackgroundRemover"
-import Lovable from "./components/Lovable"
+import YogaLandingPage from "./components/YogaLandingPage"
 
 function App() {
   return (
     <>
-    <BackgroundRemover/>
+    <YogaLandingPage/>
     </>
   )
 }
