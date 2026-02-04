@@ -1,9 +1,9 @@
-import ExhaleLandingTwo from "./components/ExhaleLandingTwo"
+import YogaLandingPage from "./components/YogaLandingPage"
 
 function App() {
   return (
     <>
-    <ExhaleLandingTwo/>
+      <YogaLandingPage />
     </>
   )
 }
