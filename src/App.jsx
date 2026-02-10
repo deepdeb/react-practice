@@ -1,9 +1,9 @@
-import YogaLandingPage from "./components/YogaLandingPage"
+import EduGrade from "./components/EduGrade"
 
 function App() {
   return (
     <>
-      <YogaLandingPage />
+      <EduGrade />
     </>
   )
 }
