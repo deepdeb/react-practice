@@ -214,8 +214,35 @@ const EduGrade = () => {
 
 
       {/* Footer */}
-      <footer className="px-10 py-12 text-center bg-gray-100">
-        <h3 className="text-xl font-bold">Featured Courses</h3>
+      <footer className="px-10 py-12 text-center bg-black text-white">
+        <div className="flex items-center justify-between max-w-6xl mx-auto mb-5">
+          <div className="flex flex-col items-start">
+            <div className="flex items-center gap-5">
+              <div className="h-8 w-8 border-2 border-white rotate-45 flex items-center justify-center">
+                <div className="h-6 w-6 border border-white flex items-center justify-center">
+                  <p className="-rotate-45 text-sm font-medium">E <span className="text-yellow-500">.</span></p>
+                </div>
+              </div>
+              <div className="flex flex-col items-start">
+                <span className="font-bold text-md text-white">Edugrade</span>
+                <span className="italic text-xs">Eternity Learning</span>
+              </div>
+            </div>
+          </div>
+          <ul className="flex flex-col gap-3">
+            <li>
+              <a href="#" className="text-sm font-bold text-white hover:text-yellow-500 transition-all duration-300 cursor-pointer">About Us</a>
+            </li>
+            <li>
+              <a href="#" className="text-sm font-bold text-white hover:text-yellow-500 transition-all duration-300 cursor-pointer">What We Do</a>
+            </li>
+            <li>
+              <a href="#" className="text-sm font-bold text-white hover:text-yellow-500 transition-all duration-300 cursor-pointer">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div className="h-px w-full bg-gray-700 mb-2"></div>
+        <h3 className="text-xs text-gray-400">©{new Date().getFullYear()} <span className="text-yellow-500">Edugrade</span> | Copyright Reserved</h3>
       </footer>
     </div>
   );
