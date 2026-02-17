@@ -1,9 +1,9 @@
-import EduGrade from "./components/EduGrade"
+import ExhaleLandingTwo from "./components/ExhaleLandingTwo"
 
 function App() {
   return (
     <>
-      <EduGrade />
+      <ExhaleLandingTwo />
     </>
   )
 }
